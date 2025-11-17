@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+.bg-gradient-animation {
+      background: linear-gradient(-45deg, #ffd6e8, #ffeef8, #fff1f6, #ffd6e8);
+      background-size: 400% 400%;
+      animation: gradientFlow 8s ease infinite;
+    }
+    
+    @keyframes gradientFlow {
+      0% { background-position:0% 50% }
+      50% { background-position:100% 50% }
+      100% { background-position:0% 50% }
+    }
+    
+    .floating-heart {
+      position: fixed;
+      bottom: -20px;
+      font-size: 20px;
+      animation: floatUp linear forwards;
+      z-index: 9998;
+    }
+    
+    @keyframes floatUp {
+      from { transform: translateY(0); opacity: 1 }
+      to { transform: translateY(-120vh); opacity: 0 }
+    }
+    
+    .shiny-text {
+      background: linear-gradient(90deg,#ff4da6,#ffd6ea,#ff4da6);
+      -webkit-background-clip: text; /* Chrome, Safari */
+      background-clip: text;         /* Firefox */
+      color: transparent;
+      animation: shine 3.5s linear infinite;
+      background-size:200%;
+    }
+    
+    @keyframes shine {
+      0% { background-position:0% }
+      100% { background-position:200% }
+    }
+    
+    .name-shine {
+      font-weight: 800;
+      background: linear-gradient(90deg,#fff,#ffd6ea,#fff);
+      -webkit-background-clip: text; /* Chrome, Safari */
+      background-clip: text;         /* Firefox */
+      color: transparent;
+      animation: nameGlow 2.8s linear infinite;
+    }
+    @keyframes nameGlow {
+      0% { background-position:0% }
+      50% { background-position:100% }
+      100% { background-position:0% }
+    }
+    
